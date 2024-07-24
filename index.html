@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#2">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#1">Place Order</a></li>
+        </ul>
+    </nav>
+    <h1 id="home">CARS
+        <a href="#home">
+            <img src="image/logo2.png" alt="Logo">
+        </a>
+    </h1>
+    <div class="logo">
+        <img src="image/logo.png" onclick="alert('hi! there')" alt="Logo">
+    </div>
+    <p style="font-size: xx-large; text-align: center;">
+        Introducing our new <span style="color: rgb(251, 165, 4); text-shadow: 1px 1px #382e12;">CARS</span>
+    </p>
+    <div class="container">
+        <img src="image/car1.png" alt="Car 1">
+        <img src="image/car3.png" alt="Car 3">
+        <img src="image/carr.png" alt="Carr">
+    </div>
+    <div class="container">
+        <ul class="feature">
+            <li id="names">lightning McQueen</li>
+            <li>feature 1</li>
+            <li>feature  2</li>
+        </ul>
+        <ul class="feature">
+            <li id="names">Ramone</li>
+            <li>feature 1</li>
+            <li>feature  2</li>
+        </ul>
+        <ul class="feature">
+            <li id="names">Doc Hudson</li>
+            <li>feature 1</li>
+            <li>feature  2</li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="image/car2.png" alt="Car 2">
+        <img src="image/car5.png" alt="Car 5">
+        <img src="image/car6.png" alt="Car 6">
+    </div>
+    <div class="container">
+        <ul class="feature">
+            <li id="names">Mack</li>
+            <li>feature 1</li>
+            <li>feature  2</li>
+        </ul>
+        <ul class="feature">
+            <li id="names">Strip 'The King'</li>
+            <li>feature 1</li>
+            <li>feature  2</li>
+        </ul>
+        <ul class="feature">
+            <li  id="names">Snotrod</li>
+            <li>feature 1</li>
+            <li>feature  2</li>
+        </ul>
+    </div>
+    <h2 id="1"><b>Order Now!</b></h2>
+    <form action="#" method="post">
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+            <option value="large">Large</option>
+            <option value="medium">Medium</option>
+            <option value="small">Small</option>
+        </select>
+        <label for="car">Car:</label>
+        <select id="car" name="car">
+            <option value="lightning McQueen">lightning McQueen</option>
+            <option value="Ramone">Ramone</option>
+            <option value="Doc Hudson">Doc Hudson</option>
+            <option value="Mack">Mack</option>
+            <option value="Strip'The King'">Strip'The King'</option>
+            <option value="Snotrod">Snotrod</option>
+        </select><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="button" onclick="display()">Confirm Order</button>
+    </form>
+    <p id="show"></p>
+    
+
+    <footer>
+        <p id="2" style="background-color: #ffca3a;">copyright © Aniket Indalkar-all rights reserved 
+        <a href="https://aniketindalkar.github.io/aniketindalkar/">contact me</a></p>
+    </footer> 
+      
+    <script>
+        function display() {
+            let name = document.getElementById('name').value;
+            let car = document.getElementById('car').value;
+            let size = document.getElementById('size').value;
+
+            document.getElementById('show').textContent = "YAYY!!!"+"\n"+name + " your order has been placed !! for a " + size + " " + car ;
+        }
+    </script>  
+</body>
+</html>
